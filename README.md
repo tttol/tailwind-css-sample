@@ -23,3 +23,28 @@ TL;DR
 
 - 疑似要素は`hover:xxx`で可能
 - `odd`, `even` などもできる
+- 他にも色々、、（書ききれません）
+
+## Responsive Design
+
+[Responsive Design - Tailwind CSS](https://tailwindcss.com/docs/responsive-design)
+
+TL;DR
+
+- `sm:w-32`などのようにprefix付きでclassを記述するだけで、レスポンシブデザインを実現できる
+- 基本思想は「Working mobile-first」
+    - `@media (min-width`はあるが`max-width`がないのがミソ
+    - prefix付きのclassは全サイズに適用される
+    - タブレット、PCブラウザ向けのcssはprefix付きで記述する必要がある
+    - つまり、モバイル用cssを先に定義して、モバイル以上のサイズは後付けで上書きする
+
+## Dark Mode
+
+[Dark Mode - Tailwind CSS](https://tailwindcss.com/docs/dark-mode)
+
+TL;DR
+
+- tailwind.config.jsにて`darkMode: 'media', // or 'class’`で設定する
+    - `media`なら、OSの設定に依存する
+    - `class`なら、親クラスにclass=”dark”があるかどうかで判定する
+    - マニュアルで可変にすることも可能

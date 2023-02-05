@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .card-text {
+        @apply text-slate-500 dark:text-slate-400;
+    }
+}
