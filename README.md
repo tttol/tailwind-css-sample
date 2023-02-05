@@ -50,7 +50,7 @@ TL;DR
     - マニュアルで可変にすることも可能
 
 
-## ****Extracting classes with `@apply`**
+## Extracting classes with `@apply`
 
 [Reusing Styles - Tailwind CSS](https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply)
 
