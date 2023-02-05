@@ -48,3 +48,20 @@ TL;DR
     - `media`なら、OSの設定に依存する
     - `class`なら、親クラスにclass=”dark”があるかどうかで判定する
     - マニュアルで可変にすることも可能
+
+
+## ****Extracting classes with `@apply`**
+
+[Reusing Styles - Tailwind CSS](https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply)
+
+TL;DR
+
+- input.cssに以下を追記する
+
+```css
+@layer components {
+    .card-text {
+        @apply text-slate-500 dark:text-slate-400;
+    }
+}
+```
